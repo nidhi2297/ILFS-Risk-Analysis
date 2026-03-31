@@ -107,5 +107,4 @@ Data has been sourced from public financial reports.
 
 Aspiring Data Analyst with a background in applied statistics, building projects in finance.
 
-
 A weighted risk model was constructed:
