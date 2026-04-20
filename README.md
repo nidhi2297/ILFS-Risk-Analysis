@@ -67,7 +67,7 @@ In FY 2018-19, the Credit ratings dropped to D (Default) indicating systemic col
 ## 📊 Dashboard Preview
 The analysis was visualized in Power BI to track the Y-o-Y deterioration of solvency and liquidity.
 <p align="center">
-  <img src="IL&FS Dashboard preview.png" width="90%">
+  <img src="Dashboard.png" width="90%">
 </p>
 
 ## 🏗️ Structural Weaknesses Identified
