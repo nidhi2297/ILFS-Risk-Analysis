@@ -71,9 +71,9 @@ Reduced transparency and masked underlying financial risks.
 
 ## 📊 Dashboard Preview
 
-![Dashboard](IL&FS%20Dashboard%20preview.png)
-
----
+<p align="center">
+  <img src="IL&FS Dashboard preview.png" width="90%">
+</p>
 
 ## 🛠️ Tools & Skills Used
 
@@ -103,8 +103,9 @@ This highlights the importance of **independent financial risk analysis**.
 This project is for educational and portfolio purposes.  
 Data has been sourced from public financial reports.
 
-## 🙋‍♀️ About Me
+## 👤 About the Author
+[Nidhi Sharma] * Aspiring Quantitative Analyst | CFA Level 1 Candidate | ISI Alumnus*
 
-Aspiring Data Analyst with a background in applied statistics, building projects in finance.
-
-A weighted risk model was constructed:
+📧 Contact & Connect
+LinkedIn: Nidhi Sharma
+Portfolio: [(https://github.com/nidhi2297/ILFS-Risk-Analysis)]
