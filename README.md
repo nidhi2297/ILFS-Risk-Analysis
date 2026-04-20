@@ -1,13 +1,13 @@
-# 📊 IL&FS Risk Analysis: Early Warning Signals Before Collapse
+# 📊 IL&FS Risk Analysis: Early Warning Signals Before Collapse (2013-2018)
 
 ## 🔍 Project Overview
-IL&FS Financial Services Limited (IFIN), a systemically important NBFC in India, collapsed in 2018 despite maintaining a **AAA credit rating**.
+IL&FS Financial Services Limited (IFIN), a systemically important NBFC in India, collapsed in 2018 despite maintaining a **AAA credit rating**, until the very month of default in 2018.
 
 This project aims to answer a critical question:
 
 👉 *Could the collapse have been predicted using financial data?*
 
-Using financial statements from 2013–2018, this analysis identifies early warning signals through ratio analysis and builds a **composite risk score model**.
+Using annual financial statements from 2013–2018, this project identifies the "red flags" that credit rating agencies missed and builds a **Composite Risk Score Model** to quantify the deterioration of the firm's solvency
 
 ## ⚠️ Why This Case Matters
 
@@ -18,7 +18,7 @@ Using financial statements from 2013–2018, this analysis identifies early warn
 
 ## 🧠 Methodology
 
-A data-driven financial analysis was performed using key risk indicators:
+A data-driven financial analysis was performed using key risk indicators
 
 ### 📌 Risk Indicators Used
 
@@ -31,16 +31,19 @@ A data-driven financial analysis was performed using key risk indicators:
 | Asset Quality | Provisions / Total Assets | Rising = deteriorating asset quality |
 | Market Dependence | Commercial Paper / Total Debt | Higher = reliance on market funding |
 
-## 📈 Composite Risk Score : 0.20 × Liquidity +
+## 📈 Composite Risk Score 
+To move beyond basic ratio analysis, I developed a weighted **Composite Risk Score (CRS)** to aggregate different dimensions of distress. 
+
+0.20 × Liquidity +
 0.25 × Cash Flow +
 0.20 × Coverage +
 0.20 × Leverage +
 0.10 × Provision +
 0.05 × Market Dependence
 
+* **Normalization:** All variables were scaled from 0 (Low Risk) to 1 (High Risk).
+* **Directional Adjustment:** Inverted metrics (like Interest Coverage) were adjusted so that a lower ratio leads to a higher risk score.
 
-✔ Metrics were normalized  
-✔ Direction of risk was adjusted  
 
 ## 📊 Key Insights
 
@@ -51,39 +54,46 @@ A data-driven financial analysis was performed using key risk indicators:
 - 📊 Provision levels increased, indicating asset stress  
 - 🚨 Despite these signals, credit rating remained **AAA**
 
-## 🏗️ Structural Weaknesses Identified
+| Financial Year | Credit Rating | Composite Risk Score | Market Context |
+| :--- | :--- | :--- | :--- |
+| **FY 2013-14** | AAA | 0.13 (Stable) | Steady growth in infra book; ALM manageable. |
+| **FY 2014-15** | AAA | 0.18 (Stable) | Static Assets and focus on curbing delinquencies. |
+| **FY 2015-16** | AAA | 0.47 (Caution) | **CFO turns negative**; reliance on short-term debt |
+| **FY 2016-17** | AAA | 0.28 (Caution) | Interest coverage drops; focus on managing NPAs and stressed assets. |
+| **FY 2017-18** | AAA | **0.78 (High Risk)** | Provisions rise, Cash flows negative, coverage drops significantly, leverage rises, liquidity risk |
 
-### 1. ALM Mismatch
-Short-term borrowings used to fund long-term infrastructure assets.
-
-### 2. Market Funding Dependence
-Heavy reliance on commercial paper exposed the firm to liquidity shocks.
-
-### 3. Debt Distribution Model Risk
-Risk was transferred but retained through guarantees.
-
-### 4. Hidden Liabilities
-Guarantees to subsidiaries materialized during stress.
-
-### 5. Complex Group Structure
-Reduced transparency and masked underlying financial risks.
-
+In FY 2018-19, the Credit ratings dropped to D (Default) indicating systemic collapse leading to a turmoil in the NBFC sector in India. 
 
 ## 📊 Dashboard Preview
-
+The analysis was visualized in Power BI to track the Y-o-Y deterioration of solvency and liquidity.
 <p align="center">
   <img src="IL&FS Dashboard preview.png" width="90%">
 </p>
 
+## 🏗️ Structural Weaknesses Identified
+
+### 1. ALM Mismatch
+IL&FS used **short-term commercial paper** (low cost but high turnover) to fund **long-term infrastructure projects** (illiquid). When market liquidity dried up, the "house of cards" collapsed.
+
+### 2. Hidden Liabilities
+The parent company leveraged its equity to fund subsidiaries, which then took on additional debt. Extensive **guarantees to related parties** acted as off-balance-sheet liabilities that materialized during the stress period.
+
+### 3. Debt Distribution Model Risk
+Risk was transferred but retained through guarantees.
+
+### 4. The "AAA" Mirage
+Despite a negative **Cash Flow from Operations (CFO)** and a declining **Interest Coverage Ratio**, credit agencies maintained a AAA rating, highlighting a massive failure in external risk assessment frameworks.
+
+### 5. Complex Group Structure
+IL&FS used complex debt products with senior and subordinate debts and varying charges.Reduced transparency and masked underlying financial risks. 
+
 ## 🛠️ Tools & Skills Used
 
-- Excel (Data Cleaning & Structuring)
-- Power BI (Dashboard & Visualization)
-- Financial Analysis (Ratio Modelling)
-- Risk Modelling (Composite Score)
+* **Financial Modeling:** Ratio Analysis, Normalization, Weighted Scoring Models.
+* **Power BI:** Implemented `Time Intelligence DAX` to visualize multi-year financial trends.
+* **Excel:** Forensic data cleaning and Z-score calculation.
 
 ## 📂 Repository Contents
-
 - `IL&FS data.xlsx` → Cleaned dataset  
 - `IL&FS analysis.pbix` → Power BI dashboard  
 - `IL&FS.docx` → Detailed case study  
@@ -101,7 +111,7 @@ This highlights the importance of **independent financial risk analysis**.
 ## 📌 Disclaimer
 
 This project is for educational and portfolio purposes.  
-Data has been sourced from public financial reports.
+Data was sourced from public financial reports (2013-2018)
 
 ## 👤 About the Author
 [Nidhi Sharma] * Aspiring Quantitative Analyst | CFA Level 1 Candidate | ISI Alumnus*
