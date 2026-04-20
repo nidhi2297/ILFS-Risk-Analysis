@@ -118,4 +118,4 @@ Data was sourced from public financial reports (2013-2018)
 
 📧 Contact & Connect
 LinkedIn: Nidhi Sharma
-Portfolio: [(https://github.com/nidhi2297/ILFS-Risk-Analysis)]
+Portfolio: [https://github.com/nidhi2297/Market-Microstructure-Structural-Breaks-Analyzing-the-2026-Black-Swan]
